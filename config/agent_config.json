@@ -1,0 +1,68 @@
+{
+  "_comment": "Insider Threat Detection System - Agent Configuration",
+  "_instructions": "Set 'server_url' to the IP of the machine running central_server.py. All other agents on the network point here.",
+  "server_url": "http://localhost:5000",
+  "api_key": "secr3t_auth_k3y_for_insider_threat",
+  "agent": {
+    "poll_interval_seconds": 1,
+    "thresholds": {
+      "clipboard_single_copy_mb": 1,
+      "clipboard_daily_limit_mb": 100,
+      "usb_write_threshold_mb": 50,
+      "bulk_file_access_count": 30,
+      "bulk_file_access_window_seconds": 60
+    }
+  },
+  "employees": {
+    "HP": {
+      "role": "Administrator",
+      "department": "IT",
+      "working_hours": [
+        "08:00",
+        "22:00"
+      ],
+      "clearance_level": "high"
+    },
+    "j7786": {
+      "role": "Human Resources",
+      "department": "HR",
+      "working_hours": [
+        "09:00",
+        "22:00"
+      ],
+      "clearance_level": "medium"
+    },
+    "HR_User": {
+      "role": "Human Resources",
+      "department": "HR",
+      "working_hours": [
+        "08:00",
+        "17:00"
+      ],
+      "clearance_level": "medium"
+    },
+    "Finance_User": {
+      "role": "Finance",
+      "department": "Finance",
+      "working_hours": [
+        "09:00",
+        "18:00"
+      ],
+      "clearance_level": "high"
+    },
+    "Engineer_User": {
+      "role": "Engineering",
+      "department": "Engineering",
+      "working_hours": [
+        "10:00",
+        "19:00"
+      ],
+      "clearance_level": "medium"
+    }
+  },
+  "restricted_paths": {
+    "Finance_Data": "Finance",
+    "HR_Records": "Human Resources",
+    "Engineering_Code": "Engineering"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "Finance_Data": {
+        "allowed_roles": ["Finance"],
+        "sensitivity": "high"
+    },
+    "HR_Records": {
+        "allowed_roles": ["Human Resources"],
+        "sensitivity": "high"
+    },
+    "Engineering_Code": {
+        "allowed_roles": ["Engineering"],
+        "sensitivity": "low"
+    },
+    "Public_Share": {
+        "allowed_roles": ["Finance", "Human Resources", "Engineering"],
+        "sensitivity": "low"
+    }
+}

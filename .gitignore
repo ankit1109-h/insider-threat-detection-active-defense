@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Sensitive Runtime Databases (Ensures zero personal data leakage on clone)
+*.db
+*.db-journal
+central_server/db/*.db
+data/*.db
+db/*.db
+vm_agent/*.db
+!central_server/db/.gitkeep
+
+# Forensic Desktop Screenshots (Protects user privacy)
+data/screenshots/*
+!data/screenshots/.gitkeep
+
+# Runtime Logs
+*.log
+agent.log
+
+# Intermediate Build Artifacts
+build/
+dist/agent/
+*.spec
+temp_*.txt
+temp_ch3.txt
+
+# Local IDE and Agent Scratch
+.agents/
+.claude/
+.vscode/
+.idea/
+.DS_Store
